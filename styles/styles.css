@@ -21,3 +21,44 @@ ul{
 .small.text-centered{
     line-height: 15px;
 }
+p.text-centered{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+    color: white;
+}
+
+#footer{
+    background-color: black;
+}
+span{
+    color: red;
+}
+
+a{
+    height: 100px;
+    display: inline-block;
+}
+
+#header > h2{
+    color: white;
+}
+
+#footer > p{
+    color: white;  
+}
+
+/*pseudo selectores*/
+#header li:hover{
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+tr:nth-child(even){
+    background: color #be2626;
+}
