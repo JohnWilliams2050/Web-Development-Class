@@ -1,0 +1,23 @@
+/*selectores*/
+ul{
+    background-color: black;
+}
+
+.small{
+    font-size: 15px;
+}
+
+.text-centered{
+    text-align: center;
+}
+#top-songs{
+    font-style: italic;
+}
+
+/*Otros Selectores*/
+*{
+    border:1px solid red;
+}
+.small.text-centered{
+    line-height: 15px;
+}
