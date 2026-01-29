@@ -60,5 +60,130 @@ a{
 }
 
 tr:nth-child(even){
-    background: color #be2626;
+    background: color #dddddd;
 }
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+/*Working with boxes here*/
+p{
+    margin:10px;
+    padding:10px;
+}
+/*html has it's own padding so here we change that*/
+html,body{
+    padding:0;
+    margin:0;
+}
+
+#header h2{
+    margin:0;
+}
+
+#header{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+#header ul{
+    display: flex;
+    margin: 0;
+}
+
+table{
+    width: 50%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    width: 58%;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 6px;
+}
+
+.artist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+
+}
+
+*{
+    box-sizing: border-box; /*adds the border pixels into consideration so that it basically can go edge-to-edge*/
+}
+#footer{
+    display:flex;
+    flex-direction: row;
+}
+#social{
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+#social a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+#social p{
+    margin: 0;
+}
+
+
+#presentacion{
+    height:500px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-drection:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation *{
+    color:white;
+}
+
+#presentation h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+@media (min-width: 576px){
+
+}
+@media (min-width: 768px){
+    
+}
+@media (min-width: 992px){ /*when the screen size is of a certain pixels, and you have added the "verde and other colors as classes, depending on the size of the screen it will trigger a different color"*/
+    .verde{
+        background-color: green;
+    }
+    
+}
+@media (min-width: 1200px){
+    
+}
+@media (min-width: 1400px){
+    
+}
+
+
+
+

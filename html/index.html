@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BogoRock</title>
-    <link rel="stylesheet" href="../styles/styles.css"
+    <link rel="stylesheet" href="../styles/styles.css"/>
 </head>
 <body>
-    <div>
+    <header>
         <ul>
             <a href="index.html">
                 <li>Home</li>
@@ -19,73 +19,87 @@
                 <li>Contact</li>
             </a>
         </ul>
-        <h2>Logo</h2>
+    </header>
+    <main>
+        <div id="presentacion">
+            <h1>BogoRock</h1>
+            <h2 class="text-centered">New Music <br/>Moving <em>bogota</em> to the next level</h2>
+            <p class="text-centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Vertigo</span> Sunt culpa repellendus odit tenetur qui ad. Libero dolores inventore facilis natus.</p>
+        </div>
+
+        <h3>Featured Artists</h3>
+        <div class="artist">
+            <article class="card">
+                <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Maneskin"/>
+                <div>
+                    <strong>Artist Names</strong>
+                    <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Daft Punk"/>
+                <div>
+                    <strong>Artist Names</strong>
+                <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Creepy Nuts"/>
+                <div>
+                    <strong>Artist Names</strong>
+                    <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
+                </div>
+            </article>
+        </div>
+
+
+        <h3>Latest Releases</h3>
+        <div id="container">
+            <table>
+                <th>Artist</th>
+                <th>Song</th>
+                <th>Date</th>
+                <th></th>
+                <tr>
+                    <td>Artist Name</td>
+                    <td>Song Name</td>
+                    <td>Release Date</td>
+                    <td><button>Listen Now</button></td>
+                </tr>
+                        
+                <tr>
+                    <td>Artist Name</td>
+                    <td>Song Name</td>
+                    <td>Release Date</td>
+                    <td><button>Listen Now</button></td>
+                </tr>
+                <tr>
+                    <td>Artist Name</td>
+                    <td>Song Name</td>
+                    <td>Release Date</td>
+                    <td><button>Listen Now</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <h3 id="top-songs">Top Charts</h3>
+        <ol>
+            <li>Song Name</li>
+            <li>Song Name</li>
+            <li>Song Name</li>
+        </ol>
+    </main>
+    <footer> <!--etiquetas semanticas header footer y section (section tiene atributo de id), article para contenido que tiene sentido por si mismo, strong es semantica tambien version no semantica es "b, tambien em"-->
+        <div id="copyright">
+            <p>© 2024 BogoRock. All rights reserved.</p>
+        </div>
+        <div id="social">
+            <h4>Follow us on Social Media</h4>
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </footer>
     </div>
-    <h1>Hello, World!</h1>
-    <h2 class="text-centered">New Music <br/>Moving <em>bogota</em> to the next level</h2>
-    <p class="text-centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Vertigo</span> Sunt culpa repellendus odit tenetur qui ad. Libero dolores inventore facilis natus.</p>
-    <h3>Featured Artists</h3>
-
-    <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Maneskin"/>
-    <strong>Artist Names</strong>
-    <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
-
-    <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Daft Punk"/>
-    <strong>Artist Names</strong>
-    <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
-
-    <img src="imagenes\merlin_68436082_cbc2d16f-e4ce-4e8e-9f06-d2789c9f309b-superJumbo.jpg" alt="Creepy Nuts"/>
-    <strong>Artist Names</strong>
-    <p class="small text-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eum non soluta nihil? Culpa, molestias officia. Repudiandae at libero tempore fugit? Nulla, unde quaerat. Necessitatibus cum nostrum sed non rem?</p>
-
-    <h3>Latest Releases</h3>
-    <table>
-        <th>Artist</th>
-        <th>Song</th>
-        <th>Date</th>
-        <th></th>
-        <tr>
-            <td>Artist Name</td>
-            <td>Song Name</td>
-            <td>Release Date</td>
-            <td><button>Listen Now</button></td>
-        </tr>
-                
-        <tr>
-            <td>Artist Name</td>
-            <td>Song Name</td>
-            <td>Release Date</td>
-            <td><button>Listen Now</button></td>
-        </tr>
-        <tr>
-            <td>Artist Name</td>
-            <td>Song Name</td>
-            <td>Release Date</td>
-            <td><button>Listen Now</button></td>
-        </tr>
-    </table>
-    <h3 id="top-songs">Top Charts</h3>
-    <ol>
-        <li>Song Name</li>
-        <li>Song Name</li>
-        <li>Song Name</li>
-    </ol>
-
-    <hr/>
-    <div id="footer">
-        <h4>Follow us on Social Media</h4>
-        <a href="#" target="_blank">Facebook</a> |
-        <a href="#" target="_blank">Twitter</a> |
-        <a href="#" target="_blank">Instagram</a>
-        <p>© 2024 BogoRock. All rights reserved.</p>
-    </div>
-    <div>p</div>
-    <div>p</div>
-    <div>p</div>
-    <div>p</div>
-
-    <a>links</a>
-    <a>links</a>
-    <a>links</a>
 </body>
 </html>
+<!--mediaquery permite compilar cierto codigo de css si cierta condicion se cumple-->

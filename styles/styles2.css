@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    border: yellow 1px solid;
+    height:100%; /*to use the whole screen*/
+    justify-content:center; /*what flex box allows you to do is align content*/
+    align-items: center;/*this is so that it centers in the other axis. in this case the y axis*/ 
+
+    flex-wrap: wrap; /*this is in the case that there's too many things that don't fit on scree, you tell it to wrap around the screen*/
+}
+
+
+
+.cuadrado{
+    flex-grow: 1; /*en flex box permite adaptar para tomar el resto del espacio faltante*/
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    border: black 1px solid;
+    display: inline-block;
+    
+}
+.especial{
+    flex-grow: 2; /*en flex box permite adaptar para tomar el resto del espacio faltante*/
+    align-self:flex-end; /*This allows to align it seperatly and there are different places to put it*/
+}
+
+html, body{
+    border: green 1px solid;
+    height:100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
