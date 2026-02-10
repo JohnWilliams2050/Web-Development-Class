@@ -1,0 +1,96 @@
+header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+#header > h1{
+    color: white;
+    margin-left: 20px;
+    text-decoration: underline navy;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+  background-image: url(../images/baldurs_gate_3_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+main{
+    flex: 1;
+    margin: 0 auto 50px auto;
+    padding-top: 100px;
+
+    background-color: burlywood;
+}
+#content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: clamp(40px, 8vw, 160px);
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > p{
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: underline navy;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-right:10px;
+    align-items: left;
+}
+.nav a{
+    text-decoration: none;
+    color:darkorchid;
+}
+.nav {
+    list-style-type: none;
+}
+.nav li:hover{
+    background-color: lightgray;
+}
+iframe{
+    max-width: 100%;
+    min-width: 600px;
+    max-height: 100%;
+    min-height: 337.5px;
+}
+#more_links{
+    display: flex;
+    justify-content: center
+}
+#more_links a{
+    padding: 20px;
+}
