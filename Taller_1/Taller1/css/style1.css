@@ -1,3 +1,5 @@
+/*This is where i describe how the header is going to display. telling it to be black and be flex with space between the contents of is since i wanted the title
+on the left and the nav-bar on the right. Also told it to be fixed so that it wouldn't disapear when scrolling down*/
 header{
     background-color: black;
     height: 100px;
@@ -6,37 +8,78 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
 }
+/*This is where i describe how the title of the page is going to look and behave in the page. Added margins and the underline text decoration*/
 #header > h1{
     color: white;
     margin-left: 20px;
+    padding-inline: 0;
+    text-decoration: underline navy;
 }
+/*this was done so that it would go edge to edge*/
 *{
-    border: 1px solid red;
-}
-html, body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/*this is the main part where i describe how the inner page is going to look and act*/
 main{
-    margin: 5px;
     flex: 1;
+    margin: 0 auto 50px auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: burlywood;
+    margin-bottom: 100px;
+
 }
-body{
-    display: flex;
-    flex-direction: column;
+/*this is so that the html page covers the whole screen*/
+.page{
     min-height: 100vh;
-    justify-content: space-between;
+    display: flex;
+    flex-direction:column;
+    
 }
+/*this is where i give it a background image and make sure it is centered and fits the screen*/
+body{
+    background-image: url(../images/baldurs_gate_3_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*this was done to help with the reactiveness of the main and its contents. giving it a max width and then telling it how much padding should the main part have
+along with its contents. So as the page grows and shrinks, the clamp gives the page some things to go off on like the minimum value, the preferred one and the maximum the
+inline padding can be. And this is so that it can act similar to those wikis and their reactivess when someone shrinks the screen*/
+#content, h1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: clamp(40px, 8vw, 160px);
+}
+/*This is just to make sure that every title is centered and has a dark blue underline, i chose navy since it looks and fits the website better than darkblue*/
+h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: underline navy;
+}
+/*this is where i tell the picture to have a rounded black border and to change size given the width and how much it can change. It doesn't change much. It
+just fills the space it is given in terms of width and then it shrinks until it gets to 600px. The height adjusts autmatically alongside the width*/
 #mainPic{
     width: 600px;
+    max-width: 100%;
     height: auto;
     float: left;
     border-color: black;
+    border-style: solid;
     border-radius: 5px;
     border-width: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
+
 }
+/*This is where i begin to give details to the nav bar. Right here Im having them be stacked on top of each other with some padding and centered*/
 .nav{
     display: flex;
     flex-direction: column;
@@ -45,23 +88,29 @@ body{
     padding-right:10px;
     align-items: left;
 }
+/*I continue to give detail by telling it that i don't need decorations and that the letters should be color darkorchid*/
 .nav a{
     text-decoration: none;
     color:darkorchid;
 }
+/*this right here highlights each option when hovering over them*/
 li:hover{
     background-color: lightgray;
 }
+/*just telling the footer the background color, telling it to flex and be in the center of the x-axis*/
 footer{
     background-color: black;
-    height: 50px;
+    height: 100px;
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
 }
+/*this tells the page that the text for the footer should be white to contrast the black footer*/
 footer > p{
     color: white;
     margin: 0;
+}
+/*more underlining for titles and sub-titles*/
+h2{
+    text-decoration: underline navy;
 }
